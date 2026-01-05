@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.bg-purple-white {
+  background: linear-gradient(to bottom, #9165dd, #ffffff);
+}
+
+  .center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
