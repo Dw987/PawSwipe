@@ -7,7 +7,4 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   base: "/PawSwipe",
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  build: {
-    outDir: "dist",
-  },
 });
