@@ -1,1 +1,0 @@
-import{w as o,j as r,O as t}from"./chunk-WWGJGFF6-CgPG0B7d.js";const c=o(function(){try{return r.jsx(t,{})}catch(e){return console.error(e),r.jsxs("div",{style:{color:"red",padding:"2rem"},children:["⚠️ App failed to render! Check console for errors.",r.jsx("pre",{children:e.message})]})}});export{c as default};
