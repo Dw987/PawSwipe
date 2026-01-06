@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getAssetPath } from "~/utils/assets";
 
 interface SumCardProps {
   show: boolean;
@@ -72,7 +73,7 @@ export function SumCard({
               {dislikedImgSets.length}
             </span>
             <img
-              src="/Icons/dislike.png"
+              src={getAssetPath("Icons/dislike.png")}
               alt="Disliked"
               className="w-10 h-10 object-contain my-1"
             />
@@ -93,7 +94,7 @@ export function SumCard({
               {likedImgSets.length}
             </span>
             <img
-              src="/Icons/like.png"
+              src={getAssetPath("Icons/like.png")}
               alt="Liked"
               className="w-10 h-10 object-contain my-1"
             />
@@ -150,7 +151,7 @@ export function SumCard({
     }`}
             >
               <img
-                src="/Icons/previousBtn.png"
+                src={getAssetPath("Icons/previousBtn.png")}
                 alt="Disliked"
                 className="w-10 h-10 object-contain my-1"
               />
@@ -168,7 +169,7 @@ export function SumCard({
     }`}
             >
               <img
-                src="/Icons/nextBtn.png"
+                src={getAssetPath("Icons/nextBtn.png")}
                 alt="Disliked"
                 className="w-10 h-10 object-contain my-1"
               />
