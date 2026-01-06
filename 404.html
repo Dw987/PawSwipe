@@ -2,17 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>PawSwipe</title>
-    <script>
-      var path = window.location.pathname.replace("/PawSwipe/", "");
-      if (path) {
-        sessionStorage.setItem(
-          "redirect",
-          path + window.location.search + window.location.hash
-        );
-      }
-      window.location.replace("/PawSwipe/");
-    </script>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0;URL='/PawSwipe/'" />
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting to home page...</p>
+  </body>
 </html>
