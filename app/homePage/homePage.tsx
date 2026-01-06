@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./homePage.css";
 import { SumCard } from "../summary/SumCard";
-
+import { getAssetPath } from "~/utils/assets";
 const URL = "https://cataas.com/cat?json=true";
 const swipe_threshold = 100;
 
@@ -119,7 +119,7 @@ export function HomePage() {
   }, [isDragging, startX]);
 
   const playFlipAud = () => {
-    const cardFlip = new Audio("/Audio/cardFlip.mp3");
+    const cardFlip = new Audio(getAssetPath("Audio/cardFlip.mp3"));
     cardFlip.currentTime = 0;
     cardFlip.play();
   };
@@ -129,7 +129,7 @@ export function HomePage() {
       {!catImg ? (
         <div className="center-flex  flex-col gap-4">
           <img
-            src="/Icons/oiia-cat.gif"
+            src={getAssetPath("Icons/oiia-cat.gif")}
             alt="Loading Cat"
             className="w-40 h-40 object-contain"
           />
@@ -197,7 +197,7 @@ export function HomePage() {
             {/* Left */}
             <div className="w-1/2 flex-col center-flex border-r border-gray-200">
               <img
-                src="/Icons/swipe-left.gif"
+                src={getAssetPath("Icons/swipe-left.gif")}
                 alt="Swipe Left"
                 className="w-12 h-15 object-contain"
               />
@@ -207,7 +207,7 @@ export function HomePage() {
             {/* Right */}
             <div className="w-1/2 flex-col center-flex">
               <img
-                src="/Icons/swipe-right.gif"
+                src={getAssetPath("Icons/swipe-right.gif")}
                 alt="Swipe Right"
                 className="w-12 h-15 object-contain"
               />
@@ -240,7 +240,7 @@ function ImageCard({ img }: { img: string }) {
           className="absolute top-2 right-2 p-2 bg-transparent rounded-full shadow-md hover:bg-[#202020]  cursor-zoom-out "
         >
           <img
-            src="/Icons/fullScreen.png"
+            src={getAssetPath("Icons/fullScreen.png")}
             alt="Full Screen"
             className="w-6 h-6 rounded-full"
           />
