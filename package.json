@@ -4,11 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "start": "vite preview",
+    "build": "react-router build",
+    "build:prod": "react-router build --mode production",
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d build/client",
+    "dev": "react-router dev",
+    "start": "npx serve build/client -s -p 4173 --no-port-switching",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
